@@ -49,7 +49,7 @@ function Registrarse() {
         <div className="container pt-5 pb-5 form">
            <form>
             <Form.Group controlId="formBasicNombre">  
-                <Form.Label>Nombre Perro </Form.Label>
+                <Form.Label>Nombre </Form.Label>
                 <Form.Control type="text" name="nombre" placeholder="Ingresa tu nombre" onChange={ handleInputChange}/>
             </Form.Group>
 
