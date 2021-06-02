@@ -23,10 +23,12 @@ function Footer (){
                         </div>
                         {/* Content of the column 3 */}
                         <div className="col-md-3 col-sm-6">
-                            <h4>Ayudanos a mejorar</h4>
+                        <h4>Social</h4>
                                 <ul className="list-unstyled">
-                                  <li> Realizar encuesta </li>
-                                  <li> ¿Tienes alguna duda?</li>
+                                  <li><FaFacebookF className="iconos"/><a href="https://www.facebook.com/profile.php?id=100009452160941" target="_blank"> Oscxr Slim SA</a></li>
+                                  <li><TiSocialInstagramCircular className="iconos"/><a href="https://www.instagram.com/oscxrslimsa/?hl=es-la" target="_blank"> oscxrslimsa</a></li>
+                                  <li><AiOutlineMail className="iconos"/><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> oscxrslimsa@gmail.com </a></li>
+                                  <li><AiOutlineGithub className="iconos"/><a href="https://github.com" target="_blank"> oscxrslimsa </a></li>
                                 </ul>
                         </div>
                         {/* Content of the column 4 */}
@@ -43,7 +45,7 @@ function Footer (){
                 <hr/>
                 <div className="row">
                     <p className="col-sm">
-                        &copy;{new Date().getFullYear()} DESARROLLADO POR ALUMNOS DEL TECNM | TEAM FORTRESS | TODOS LOS DERECHOS RESERVADOS
+                        &copy;{new Date().getFullYear()} DESARROLLADO POR ALUMNOS DEL TECNM | TODOS LOS DERECHOS RESERVADOS
                     </p>
                 </div>
             </div>
