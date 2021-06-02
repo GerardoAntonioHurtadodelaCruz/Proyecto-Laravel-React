@@ -1,0 +1,45 @@
+.main-footer{
+    font-family: 'Quicksand', sans-serif;
+    color: #7E7E7E;
+    background-color: #1b1919cc ;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-footer li:hover{
+    color:black;
+    transition: all 0.4s linear;
+}
+
+.col-md-3  {
+    margin-top: 25px;
+}
+
+.col-md-3  img{
+    width: 200px;
+    height: 150px;
+}
+
+.col-md-3  li a{
+    text-decoration: none;
+    color: #7E7E7E;
+}
+
+.col-md-3  li a:hover{
+    color:black;
+    transition: all 0.4s linear;
+}
+
+.container hr{
+    background-color: white;
+}
+
+.iconos{
+    margin-right: 6px;
+}
+
+.col-sm{
+    display: inline-block;
+    text-align: center;
+}

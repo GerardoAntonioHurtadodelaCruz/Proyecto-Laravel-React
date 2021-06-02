@@ -1,0 +1,13 @@
+.caracterisiticas h4{
+    color:red;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.caracterisiticas h6{
+    font-size: 20px;
+}
+.caracterisiticas p{
+    font-size: 15px;
+    font-family: monospace;
+}

@@ -1,0 +1,29 @@
+.navbar{
+    font-size: 15px;
+    background-color: rgba(252, 230, 230, 0.452) !important;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 0 10px rgba(37, 34, 34, 0.616);
+
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    padding: 4px;
+    transition: 0.2s;
+    font-family: 'Acme', sans-serif;
+    color: red !important;
+}
+
+
+
+.nav-link{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: #111d13 !important;
+}
+
+.nav-link:hover{
+    color:red !important;
+    transition: all 0.3s linear;
+    border-bottom: solid 1px red;
+}
