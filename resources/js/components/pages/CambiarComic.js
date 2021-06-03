@@ -47,9 +47,9 @@ const CambiarComic =props => {
             <Form.Group controlId="formBasicTitle">
                    <Form.Label>Titulo: </Form.Label>
                    <Form.Control 
-                   type="text" 
+                  /*  type="text" 
                    name="titulo"
-                  /*  value={dataobj.titulo}
+                   value={dataobj.titulo}
                    onChange={e => {
                        const newValue = e.target.value;
                        setDataobj(prevState => ({
