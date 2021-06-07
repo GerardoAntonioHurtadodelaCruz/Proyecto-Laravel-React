@@ -1,8 +1,8 @@
 import React, {useState} from 'react'; 
 import Axios from 'axios';
 import {Form, Button} from 'react-bootstrap';
-import Swal from 'sweetalert2';
 import '../styles/Registrarse.css';
+import {Link} from 'react-router-dom';
 
 
 function Registrarse() {
@@ -40,7 +40,7 @@ function Registrarse() {
             config: {headers: {'Content-Type': 'multipart/form-data'}}
         })
         .then(response =>{
-            console.log('ya lo agregaste');
+            alert('Usuario creado correctamente AJUA')
         })
     }
 
@@ -75,6 +75,8 @@ function Registrarse() {
             </Form.Group>
             <Button variant="primary" type="submit" onClick={handleSubmit} >Enviar</Button> 
            </form>
+            <br/>
+           <Button as = {Link} to="/LaravelApp/public/catalogousuarios"> Ver Registros </Button>
         </div>
     )
 }

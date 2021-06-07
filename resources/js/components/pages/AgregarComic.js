@@ -40,6 +40,9 @@ function AgregarComic() {
             data: formData,
             config: {headers: {'Content-Type': 'multipart/form-data'}}
         })
+        .then(response =>{
+            alert('Comic creado correctamente AJUA')
+        })
     }
     /* --------------------------------------------- FRONTEND ------------------------------------------------------*/
     return (

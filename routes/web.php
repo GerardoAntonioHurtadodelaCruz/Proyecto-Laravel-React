@@ -19,6 +19,7 @@ Route::get('/verporid', [comicsController::class, 'show']);
 Route::post('/nuevocomics', [comicsController::class, 'store']);
 Route::get('/eliminarcomics', [comicsController::class, 'destroy']);
 Route::post('/updatecomics', [comicsController::class, 'update']);
+Route::get('comicsToken', [comicsController::class, 'showToken']);
 
 
 /* Rutas para los usuarios */

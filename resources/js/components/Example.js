@@ -11,6 +11,8 @@ import Contacto from './pages/Contacto';
 import Nosotros from './pages/Nosotros';
 import Registrarse from './pages/Registrarse';
 import Paneldecontrol from './pages/Paneldecontrol';
+import CambiarComic from './pages/CambiarComic';
+import CatalogoUsuarios from './pages/CatalogoUsuarios';
 
 function Example() {
     return (
@@ -40,6 +42,8 @@ function Example() {
                 <Route exact path="/LaravelApp/public/nosotros" component ={Nosotros}/>
                 <Route exact path="/LaravelApp/public/registrarse" component ={Registrarse}/>
                 <Route exact path="/LaravelApp/public/paneldecontrol" component ={Paneldecontrol}/>
+                <Route exact path="/LaravelApp/public/cambiocomic" component ={CambiarComic}/>
+                <Route exact path="/LaravelApp/public/catalogousuarios" component ={CatalogoUsuarios}/>
             </Switch>
             <Footer/>
         </div>

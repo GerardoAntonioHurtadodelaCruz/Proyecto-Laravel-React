@@ -7,40 +7,12 @@ import EliminarComic from './EliminarComic';
 function Paneldecontrol() {
     return (
         <div className="container pt-3 pb-3">
-            <h2>Panel de control</h2>
-            <p>Bienvendido, aquí podras controlar la base de datos</p>
+            <h2>Agregar un nuevo Comic</h2>
+            <p>Bienvendido, aquí podras agregar un nuevo comic</p>
             <div className="row">
                 <div className="col-sm-12 col-lg-4">
-                    <Modal.Dialog>
-                        <Modal.Header >
-                            <Modal.Title>Registrar comic</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <AgregarComic/>
-                        </Modal.Body>
-                    </Modal.Dialog>
+                    <AgregarComic/>
                 </div>
-                <div className="col-sm-12 col-lg-4">
-                    <Modal.Dialog>
-                        <Modal.Header >
-                            <Modal.Title>Modificar comic</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                           <CambiarComic/>
-                        </Modal.Body>
-                    </Modal.Dialog>
-                </div>
-                <div className="col-sm-12 col-lg-4">
-                    <Modal.Dialog>
-                        <Modal.Header >
-                            <Modal.Title>Eliminar comic</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <EliminarComic/>
-                        </Modal.Body>
-                    </Modal.Dialog>
-                </div>
-               
             </div>
         </div>
 

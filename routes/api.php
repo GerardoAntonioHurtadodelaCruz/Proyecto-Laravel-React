@@ -15,7 +15,7 @@ use App\Http\Controllers\comentariosController;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
-*/
+*/  
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
@@ -27,6 +27,7 @@ Route::get('/verporid', [comicsController::class, 'show']);
 Route::post('/nuevocomics', [comicsController::class, 'store']);
 Route::get('/eliminarcomics', [comicsController::class, 'destroy']);
 Route::post('/updatecomics', [comicsController::class, 'update']);
+Route::get('comicsToken', [comicsController::class, 'showToken']);
 
 
 /* Rutas para los usuarios */

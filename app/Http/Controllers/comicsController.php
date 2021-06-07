@@ -36,7 +36,7 @@ class comicsController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the request...
+        
 
         $comics = new comics;
 
@@ -58,9 +58,6 @@ class comicsController extends Controller
      */
     public function show(Request $request)
     {
-        /* $mostrar =DB::table('comics')->where('id',2)->get();
-        return $mostrar; */
-
         $mostrar = DB::table('comics')->where('id', $request->id)->get()->toJson();
         return $mostrar;
     }
@@ -83,12 +80,12 @@ class comicsController extends Controller
      * @param  \App\Models\comics  $comics
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, comics $id)
     {
         DB::table('comics')
             ->where('id', $request->id)
             ->update([
-                'title'=> $request->title,
+                'titulo'=> $request->title,
                 'descripcion'=> $request->descripcion,
                 'editorial'=> $request->editorial,
                 'ano'=> $request->ano,
@@ -106,5 +103,10 @@ class comicsController extends Controller
     public function destroy(Request $request)
     {
         $eliminar = DB::table('comics')->where('titulo',$request->titulo)->delete();
+    }
+
+    public function showToken()
+    {
+        echo csrf_token();
     }
 }
