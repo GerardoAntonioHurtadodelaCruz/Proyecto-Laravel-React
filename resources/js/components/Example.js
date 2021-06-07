@@ -14,6 +14,7 @@ import Paneldecontrol from './pages/Paneldecontrol';
 import CambiarComic from './pages/CambiarComic';
 import CatalogoUsuarios from './pages/CatalogoUsuarios';
 
+
 function Example() {
     return (
         <div>
@@ -25,7 +26,7 @@ function Example() {
                         <Nav className="mr-auto">
                             <Nav.Link  as = {Link} to="/LaravelApp/public/inicio">Inicio</Nav.Link>
                             <Nav.Link  as = {Link} to="/LaravelApp/public/catalogo">Catalogo</Nav.Link>
-                            <Nav.Link  as = {Link} to="/LaravelApp/public/contacto">Contacto</Nav.Link>
+                            <Nav.Link  as = {Link} to="/LaravelApp/public/contacto">Reseña</Nav.Link>
                             <Nav.Link  as = {Link} to="/LaravelApp/public/nosotros">Nosotros</Nav.Link>      
                             <Nav.Link  as = {Link} to="/LaravelApp/public/registrarse">Registrarse</Nav.Link>           
                         </Nav>

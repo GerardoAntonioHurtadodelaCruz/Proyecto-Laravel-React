@@ -19,6 +19,7 @@ function Contacto() {
         })
     }
     const handleSubmit = async (e) =>{
+        alert('Gracias por comentar, tu reseña aparecera en la pagina de inicio')
         e.preventDefault();
         let formData = new FormData();
 
@@ -31,13 +32,14 @@ function Contacto() {
             data: formData,
             config: {headers: {'Content-Type': 'multipart/form-data'}}
         })
+           
     }
     /* --------------------------------------------- FRONTEND ------------------------------------------------------*/
     return (
         <div className="container-fluid pb-5">
             <div className="container pt-3 text-center prueba">
-                <h1>¿Necesitas contactarnos?</h1>
-                <p>Envianos un mensaje</p>
+                <h1>Escribe sobre nosotros</h1>
+                <p>¿Que te parecio la pagina?</p>
             </div>
             <div className="row">
                 <div className="col-sm-12  col-lg-6" id="datos">
@@ -46,10 +48,10 @@ function Contacto() {
                             <Form.Label>Correo electronico:</Form.Label>
                             <Form.Control type="email" name="correo" placeholder="nombre@ejemplo.com" onChange={ handleInputChange}/>
                         </Form.Group>
-                        <Form.Label>Asunto:</Form.Label>
+                        <Form.Label>Titulo:</Form.Label>
                         <Form.Control type="text" name="asunto" onChange={ handleInputChange}/>
                         <br/>
-                        <Form.Label>Dejanos tu mensaje:</Form.Label>
+                        <Form.Label>Dejanos tu reseña:</Form.Label>
                         <Form.Control as="textarea" rows={10} name="mensaje" onChange={ handleInputChange}/>
                             <div className="pt-3">
                                 <Button variant="light" onClick={handleSubmit} type="submit">Enviar</Button>

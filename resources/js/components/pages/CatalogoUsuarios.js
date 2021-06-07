@@ -35,6 +35,7 @@ const CatalogoUsuarios = props => {
                         <th>Apellido Materno</th>
                         <th>Email</th>
                         <th>Edad</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,6 +47,9 @@ const CatalogoUsuarios = props => {
                             <td>{dataItem.apellidoPa}</td>
                             <td>{dataItem.email}</td>
                             <td>{dataItem.edad}</td>
+                            <td><Button variant="primary"> Editar </Button> -
+                                <Button variant="danger"> Eliminar </Button>                            
+                            </td>
                         </tr>
                     ))}
                 </tbody>

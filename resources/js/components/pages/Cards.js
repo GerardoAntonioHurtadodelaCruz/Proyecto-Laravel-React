@@ -4,6 +4,7 @@ import React, {useState,useEffect} from 'react';
 import {Card, Button} from 'react-bootstrap';
 import '../styles/Cards.css';
 
+
   /* --------------------------------------------- BACKEND ------------------------------------------------------*/
 const cards = props => {
     const [data, setData] = useState([]);
@@ -24,6 +25,7 @@ const cards = props => {
          
         })();
       }, []);
+      
       /* --------------------------------------------- FRONTEND ------------------------------------------------------*/
     return (
       <div className="container-fluid pt-5 pb-5">   
