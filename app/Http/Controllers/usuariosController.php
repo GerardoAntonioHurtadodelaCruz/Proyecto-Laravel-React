@@ -56,7 +56,7 @@ class usuariosController extends Controller
     public function show(Request $request)
     {
 
-        $mostrar =DB::table('usuarios')->where('edad', $request->edad)->get()->toJson();
+        $mostrar =DB::table('usuarios')->where('id', $request->id)->get()->toJson();
         return $mostrar;
     }
 

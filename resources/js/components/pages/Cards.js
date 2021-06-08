@@ -57,7 +57,7 @@ const cards = props => {
               <br/>
               <br/>
               <br/>
-              <Button variant="danger">Eliminar</Button>
+              <Button variant="danger">Eliminar</Button>  
             </div>
             <br/>
           </div>

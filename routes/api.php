@@ -32,7 +32,7 @@ Route::get('comicsToken', [comicsController::class, 'showToken']);
 
 /* Rutas para los usuarios */
 Route::get('/verusuarios', [usuariosController::class, 'index']);
-Route::get('/verporedad', [usuariosController::class, 'show']);
+Route::get('/verusuariosporid', [usuariosController::class, 'show']);
 Route::post('/nuevousuarios', [usuariosController::class, 'store']);
 Route::get('/eliminarusuarios', [usuariosController::class, 'destroy']);
 

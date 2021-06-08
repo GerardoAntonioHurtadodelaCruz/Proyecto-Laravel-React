@@ -102,7 +102,7 @@ class comicsController extends Controller
      */
     public function destroy(Request $request)
     {
-        $eliminar = DB::table('comics')->where('titulo',$request->titulo)->delete();
+        $eliminar = DB::table('comics')->where('id',$request->id)->delete();
     }
 
     public function showToken()

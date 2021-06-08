@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Table, Button} from 'react-bootstrap';
+import { Table, Button, Modal, ModalBody, ModalFooter} from 'react-bootstrap';
 import Axios from 'axios';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 /* --------------------------------------------- BACKEND ------------------------------------------------------*/
 const CatalogoUsuarios = props => {
@@ -22,7 +23,7 @@ const CatalogoUsuarios = props => {
 
 
         })();
-    }, []);
+    }, []); 
     /* --------------------------------------------- FRONTEND ------------------------------------------------------*/
     return (
         <div className="container pb-5 pt-5">
@@ -47,14 +48,15 @@ const CatalogoUsuarios = props => {
                             <td>{dataItem.apellidoPa}</td>
                             <td>{dataItem.email}</td>
                             <td>{dataItem.edad}</td>
-                            <td><Button variant="primary"> Editar </Button> -
-                                <Button variant="danger"> Eliminar </Button>                            
+                            <td>
+                            <Button as = {Link} to="/LaravelApp/public/cambioregistros"> Editar </Button>
+                                <Button variant="danger"> Eliminar </Button>
                             </td>
                         </tr>
                     ))}
                 </tbody>
             </Table>
-            <Button as = {Link} to="/LaravelApp/public/registrarse"  variant="danger"> Regresar </Button>
+            <Button as={Link} to="/LaravelApp/public/registrarse" variant="danger"> Regresar </Button>
         </div>
     )
 }

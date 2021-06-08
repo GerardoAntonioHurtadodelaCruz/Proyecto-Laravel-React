@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import React, { useState, useEffect} from 'react';
-import {Toast,ToastHeader, ToastBody } from 'react-bootstrap';
+import {Toast} from 'react-bootstrap';
 
 
 
@@ -47,9 +47,9 @@ const Inicio = props => {
                 <h2>Reseñas de la pagina:</h2>
             </div>
             {data.map(dataItem => (
-                <Toast>
+                <Toast key={dataItem.id}>
                 <Toast.Header>
-                  <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
+                  <img className="rounded mr-2" alt="" />
                   <strong className="mr-auto">{dataItem.asunto}</strong>
                   <small>{dataItem.created_at}</small>
                 </Toast.Header>
