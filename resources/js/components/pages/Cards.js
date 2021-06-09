@@ -57,7 +57,7 @@ const cards = props => {
               <br/>
               <br/>
               <br/>
-              <Button variant="danger">Eliminar</Button>  
+              <Button as = {Link} to="/LaravelApp/public/eliminarcomic"> Eliminar </Button>
             </div>
             <br/>
           </div>

@@ -14,6 +14,7 @@ import Paneldecontrol from './pages/Paneldecontrol';
 import CambiarComic from './pages/CambiarComic';
 import CatalogoUsuarios from './pages/CatalogoUsuarios';
 import CambiarRegistros from './pages/CambiarRegistros';
+import EliminarComic from './pages/EliminarComic';
 
 
 function Example() {
@@ -47,6 +48,7 @@ function Example() {
                 <Route exact path="/LaravelApp/public/cambiocomic" component ={CambiarComic}/>
                 <Route exact path="/LaravelApp/public/catalogousuarios" component ={CatalogoUsuarios}/>
                 <Route exact path="/LaravelApp/public/cambioregistros" component ={CambiarRegistros}/>
+                <Route exact path="/LaravelApp/public/eliminarcomic" component ={EliminarComic}/>
             </Switch>
             <Footer/>
         </div>
