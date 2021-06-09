@@ -3,7 +3,7 @@ import Axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
-const EliminarComic = props => {
+const EliminarUsuario = props => {
     /* --------------------------------------------- BACKEND ------------------------------------------------------*/
     const{id} =useParams()
     const [data, setData] = useState([]);
@@ -11,7 +11,7 @@ const EliminarComic = props => {
     useEffect(() => {
         (async () => {
             setLoading(true);
-            const response = await Axios.get('api/eliminarcomics?id=37'/* ,{
+            const response = await Axios.get('api/eliminarusuarios?id=2'/* ,{
                     idComic:id
                 } }*/
             )
@@ -35,4 +35,4 @@ const EliminarComic = props => {
     )
 }
 
-export default EliminarComic
+export default EliminarUsuario

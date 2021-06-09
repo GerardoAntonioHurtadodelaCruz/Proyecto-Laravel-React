@@ -11,7 +11,7 @@ const EliminarComic = props => {
     useEffect(() => {
         (async () => {
             setLoading(true);
-            const response = await Axios.get('api/eliminarcomics?id=37'/* ,{
+            const response = await Axios.get('api/eliminarcomics?id=22'/* ,{
                     idComic:id
                 } }*/
             )

@@ -92,5 +92,6 @@ class usuariosController extends Controller
     public function destroy(Request $request)
     {
         $eliminar = DB::table('usuarios')->where('id',$request->id)->delete();
+        return "Dato eliminador crack";
     }
 }

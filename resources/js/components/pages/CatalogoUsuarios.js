@@ -50,7 +50,7 @@ const CatalogoUsuarios = props => {
                             <td>{dataItem.edad}</td>
                             <td>
                             <Button as = {Link} to="/LaravelApp/public/cambioregistros"> Editar </Button>
-                                <Button variant="danger"> Eliminar </Button>
+                                <Button as={Link} to="/LaravelApp/public/eliminarusuario" variant="danger"> Eliminar </Button>
                             </td>
                         </tr>
                     ))}

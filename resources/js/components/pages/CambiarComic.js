@@ -11,7 +11,7 @@ const CambiarComic = props => {
     useEffect(() => {
         (async () => {
             setLoading(true);
-            const response = await Axios.get('api/verporid?id=13'/* ,{
+            const response = await Axios.get('api/verporid?id=15'/* ,{
                 params: {
                     idComic:id
                 } }*/
